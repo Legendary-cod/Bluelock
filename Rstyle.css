@@ -1,0 +1,394 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #1e3c72, #2a5298);
+  color: #e0f7fa;
+}
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0a1f44;
+  padding: 1rem 2rem;
+  border-bottom: 2px solid #00c6ff;
+}
+
+.gradient-heading {
+  font-size: 2rem;
+  background: linear-gradient(to right, #00c6ff, #0072ff);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.menu a {
+  margin: 0 1rem;
+  color: #00c6ff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#theme-toggle {
+  background-color: #00c6ff;
+  color: #0a1f44;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.hero-section {
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.hero-section h1,
+.hero-section h2,
+.hero-section p {
+  color: #00ffff;
+  text-shadow: 0 0 8px currentColor, 0 0 20px currentColor;
+}
+
+.animate-title.rin {
+  color: #00ffff;
+  text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff;
+  font-family: 'Orbitron', sans-serif;
+  animation: glitchPulse 1.2s infinite;
+}
+
+@keyframes glitchPulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.6; transform: scale(1.05); }
+}
+
+.rivalry-banner {
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: #0a1f44;
+  border: 2px dashed #00ffff;
+  color: #00ffff;
+  font-weight: bold;
+  text-align: center;
+  font-family: 'Orbitron', sans-serif;
+  box-shadow: 0 0 10px #00ffff;
+  animation: flickerRivalry 2s infinite;
+}
+
+@keyframes flickerRivalry {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+
+.about-me {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem;
+  background-color: #102840;
+}
+
+.my-pic img {
+  max-width: 300px;
+  border: 4px solid #00c6ff;
+  border-radius: 10px;
+}
+
+.my-info {
+  flex: 1;
+  padding: 1rem 2rem;
+}
+
+.projects-section {
+  padding: 2rem;
+}
+
+.filter-buttons button {
+  margin: 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: #00c6ff;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.project-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.project-card {
+  background-color: #102840;
+  margin: 1rem 0;
+  padding: 1rem;
+  border-left: 4px solid #00c6ff;
+  border-radius: 5px;
+  text-align: center;
+  width: 300px;
+  transition: box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+.project-card:hover {
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.5), 0 0 25px #00ffff;
+  transform: translateY(-3px) scale(1.02);
+}
+
+.research-grid {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  padding: 2rem;
+}
+
+.research-card {
+  background-color: #1a2f4d;
+  padding: 1rem;
+  border-left: 4px solid #00c6ff;
+  text-align: center;
+  width: 300px;
+  transition: box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+.research-card:hover {
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.5), 0 0 25px #00ffff;
+  transform: translateY(-3px) scale(1.02);
+}
+
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+}
+
+.contact-form {
+  width: 100%;
+  max-width: 600px;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+  text-align: left;
+  width: 100%;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 2px solid #00c6ff;
+  background-color: #0a1f44;
+  color: #e0f7fa;
+  border-radius: 5px;
+}
+
+button[type="submit"] {
+  background-color: #00c6ff;
+  color: #0a1f44;
+  padding: 0.5rem 1rem;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #00ffff;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #0a1f44;
+  color: #00c6ff;
+}
+
+.social-links {
+  text-align: center;
+  padding: 1rem;
+}
+
+.social-links a {
+  margin: 0 0.5rem;
+  color: #00c6ff;
+  font-size: 1.5rem;
+}
+
+.home-button {
+  display: inline-block;
+  margin: 1rem;
+  padding: 0.6rem 1.2rem;
+  background-color: #fff;
+  color: #000;
+  font-weight: bold;
+  border-radius: 6px;
+  text-decoration: none;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.home-button:hover {
+  transform: scale(1.05);
+  background-color: #ddd;
+}
+
+.dark-theme {
+  background: #000;
+  color: #fff;
+}
+.clash-intro {
+  display: flex;
+  height: 300px;
+  overflow: hidden;
+  border-top: 3px solid #00ffff;
+  border-bottom: 3px solid gold;
+}
+
+.clash-side {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 2rem;
+  color: white;
+  transition: transform 0.5s ease;
+}
+
+.rin-side {
+  background: linear-gradient(to right, #1e3c72, #2a5298);
+  border-right: 2px dashed #00ffff;
+}
+
+.kaiser-side {
+  background: linear-gradient(to left, #330000, #660000);
+  border-left: 2px dashed gold;
+}
+
+.clash-side:hover {
+  transform: scale(1.05);
+  text-shadow: 0 0 10px currentColor;
+}
+.project-card,
+.research-card {
+  background-color: #102840;
+  padding: 1rem;
+  border-left: 4px solid #00c6ff;
+  border-radius: 8px;
+  text-align: center;
+  width: 300px;
+  box-shadow: 0 0 10px rgba(0,255,255,0.2);
+  transition: box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+.project-card:hover,
+.research-card:hover {
+  box-shadow: 0 0 20px #00ffff, 0 0 30px #00ffff;
+  transform: translateY(-5px) scale(1.03);
+}
+
+.project-card i,
+.research-card i {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #00c6ff;
+}
+.rin-btn,
+.kaiser-btn {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1rem;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 1rem;
+  box-shadow: 0 0 10px rgba(255,255,255,0.2);
+}
+
+.rin-btn {
+  background: #00c6ff;
+  color: #0a0a0a;
+}
+
+.rin-btn:hover {
+  background: #00ffff;
+  box-shadow: 0 0 20px #00ffff;
+  transform: scale(1.05);
+}
+
+.kaiser-btn {
+  background: gold;
+  color: #330000;
+}
+
+.kaiser-btn:hover {
+  background: #ffd700;
+  box-shadow: 0 0 20px gold;
+  transform: scale(1.05);
+}
+.hero {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: linear-gradient(to bottom, #0a0f1c, #1e3c72);
+  color: #ffffff;
+}
+
+.hero-title {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+  text-shadow: 0 0 10px #00ffff;
+}
+
+.hero-subtext {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  font-style: italic;
+  color: #a0cfff;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.hero-btn {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1rem;
+  padding: 0.8rem 1.6rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px rgba(255,255,255,0.2);
+}
+
+.projects-btn {
+  background: #00c6ff;
+  color: #0a0a0a;
+}
+
+.projects-btn:hover {
+  background: #00ffff;
+  box-shadow: 0 0 20px #00ffff;
+  transform: scale(1.05);
+}
+
+.research-btn {
+  background: #003366;
+  color: #ffffff;
+  border: 2px solid #00c6ff;
+}
+
+.research-btn:hover {
+  background: #0055aa;
+  box-shadow: 0 0 20px #00c6ff;
+  transform: scale(1.05);
+}

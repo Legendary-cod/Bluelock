@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Michael Kaiser | Portfolio</title>
+  <link rel="stylesheet" href="Kstyle.css"/>
+  <script defer src="Kscript.js"></script>
+  <link rel="icon" type="image/png" href="favicon-kaiser.ico/favicon-32x32.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+<body>
+  <header class="main-header">
+    <h1 class="gradient-heading"><i class="fas fa-crown"></i> Kaiser</h1>
+    <nav class="menu">
+      <a href="#projects"><i class="fas fa-code"></i> Projects</a>
+      <a href="#research"><i class="fas fa-flask"></i> Research</a>
+      <a href="#blog"><i class="fas fa-pen-nib"></i> Blog</a>
+    </nav>
+    <button id="theme-toggle"><i class="fas fa-moon"></i></button>
+  </header>
+<section class="clash-intro kaiser-clash">
+  <div class="clash-side kaiser-side">
+    <p>Ego. Flair. Domination.</p>
+    <button class="kaiser-btn">Enter Kaiser’s Arena</button>
+  </div>
+  <div class="clash-side rin-side">
+    <p>Precision. Logic. Control.</p>
+    <button class="rin-btn">Challenge Rin</button>
+  </div>
+</section>
+
+  <section class="hero-section">
+    <h1 id="name-type">Michael Kaiser</h1>
+    <h2 id="nationality-type">German Prodigy</h2>
+    <h2>I am the Emperor of the Field</h2>
+    <p>Dominating the pitch and the codebase with precision and flair.</p>
+ <nav class="hero-buttons">
+  <a href="#" id="resume-link"><i class="fas fa-file-alt"></i> Resume</a>
+  <a href="#projects" id="projects-link"><i class="fas fa-folder-open"></i> See Projects</a>
+</nav>
+
+  </section>
+
+  <section class="about-me">
+    <div class="my-pic">
+      <div class="bg-div"></div>
+      <div class="particles"></div>
+      <img src="kaiser.jpg" alt="Michael Kaiser in action">
+    </div>
+    <div class="my-info">
+      <h1>About Me</h1>
+      <p>Visionary striker turned visionary coder. I lead with elegance and execute with power.</p>
+      <div class="school">
+        <h2><i class="fas fa-school"></i> My Academy</h2>
+        <p>Blue Lock Academy</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="projects-section">
+    <h1 class="section-title"><i class="fas fa-code"></i> Featured Projects</h1>
+    <div class="filter-buttons">
+      <button data-filter="all" class="active">All</button>
+      <button data-filter="design">Design</button>
+      <button data-filter="dev">Development</button>
+      <button data-filter="ui">UI/UX</button>
+    </div>
+    <div class="project-grid">
+      <div class="project-card design">
+        <i class="fas fa-palette"></i>
+        <h2>Kaiser Vision</h2>
+        <p>Design system inspired by tactical field awareness.</p>
+      </div>
+      <div class="project-card dev">
+        <i class="fas fa-laptop-code"></i>
+        <h2>Code Emperor</h2>
+        <p>Modular portfolio built with React and GSAP animations.</p>
+      </div>
+      <div class="project-card ui">
+        <i class="fas fa-paint-brush"></i>
+        <h2>UI Blitz</h2>
+        <p>Rapid interface prototyping with Figma and Tailwind.</p>
+      </div>
+      <div class="project-card dev">
+        <i class="fas fa-terminal"></i>
+        <h2>Match Engine</h2>
+        <p>Simulated football match logic using JavaScript.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="research">
+    <h1 class="section-title"><i class="fas fa-flask"></i> Research Highlights</h1>
+    <div class="research-grid">
+      <div class="research-card">
+        <h2>Predictive Playmaking</h2>
+        <p>Using AI to anticipate player movement and decision trees.</p>
+      </div>
+      <div class="research-card">
+        <h2>Visual Dominance</h2>
+        <p>How spatial awareness enhances UI design and gameplay.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact-section" id="contact">
+    
+  <h1 class="section-title"><i class="fas fa-envelope"></i> Get In Touch</h1>
+ <form action="https://formspree.io/f/xyzppljl" method="POST" class="contact-form">
+  <div class="form-group">
+    <label for="name"><i class="fas fa-user"></i> Your Name</label>
+    <input type="text" name="name" id="name" required />
+  </div>
+  <div class="form-group">
+    <label for="email"><i class="fas fa-at"></i> Your Email</label>
+    <input type="email" name="email" id="email" required />
+  </div>
+  <div class="form-group">
+    <label for="message"><i class="fas fa-comment-dots"></i> Your Message</label>
+    <textarea name="message" id="message" rows="5" required></textarea>
+  </div>
+  <button type="submit"><i class="fas fa-paper-plane"></i> Send</button>
+</form>
+
+</section>
+
+
+  </section>
+
+  <a href="Home.html" class="home-button"><i class="fas fa-arrow-left"></i> Back to Home</a>
+
+  <footer>
+    <p><i class="fas fa-globe"></i> © 2025 Michael Kaiser. Built with dominance and design.</p>
+  </footer>
+
+  <div class="social-links">
+    <a href="https://twitter.com/kaiserhandle" target="_blank"><i class="fab fa-twitter"></i></a>
+    <a href="https://linkedin.com/in/kaiserhandle" target="_blank"><i class="fab fa-linkedin"></i></a>
+    <a href="mailto:kaiser@email.com"><i class="fas fa-envelope"></i></a>
+    <a href="https://github.com/kaiserhandle" target="_blank"><i class="fab fa-github"></i></a>
+  </div>
+</body>
+</html>
